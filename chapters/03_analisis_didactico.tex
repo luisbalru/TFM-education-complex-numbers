@@ -244,7 +244,7 @@ Habitualmente, los números complejos (también conocidos como imaginarios) se r
 
 \subsubsection{Representación gráfica}
 
-Todo número complejo se puede representar en el diagrama de Argand o plano complejo (\cite{whittaker1927}). Dada la similitud absoluta con $\mathbb{R}^2$ en cuanto a este aspecto, dado que un número complejo se representa como un vector bidimensional, la representación gráfica es clave para la correcta comprensión por parte del alumno del bloque que nos ocupa. No obstante, también se puede utilizar otro tipo de representaciones para mostrar, por ejemplo, que todos los conjuntos numéricos conocidos son subconjunto del cuerpo de los números complejos. Es decir, que $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$. 
+Todo número complejo se puede representar en el diagrama de Argand (\cite{argand1971}) o plano complejo (\cite{whittaker1927}). Dada la similitud absoluta con $\mathbb{R}^2$ en cuanto a este aspecto, dado que un número complejo se representa como un vector bidimensional, la representación gráfica es clave para la correcta comprensión por parte del alumno del bloque que nos ocupa. No obstante, también se puede utilizar otro tipo de representaciones para mostrar, por ejemplo, que todos los conjuntos numéricos conocidos son subconjunto del cuerpo de los números complejos. Es decir, que $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$. 
 
 \begin{figure}[H]
 	\centering
@@ -334,9 +334,93 @@ Por último, podemos señalar \textit{argumento} como un término quizá ligeram
 
 Tal y como expresa \cite{lupi2013} en \cite{rico2013}, la historia es un buen mecanismo para estudiar el contenido de un tema, pues el desarrollo histórico es útil para determinar el origen de los conceptos, comparar sistemas de representación o localizar problemas clásicos. \\
 
-Por sorprendente que pueda parecer, los números complejos surgieron por la necesidad de resolver ecuaciones cúbicos y no cuadráticas. Hagamos un recorrido por la historia de los números complejos:
+Por sorprendente que pueda parecer, los números complejos surgieron por la necesidad de resolver ecuaciones cúbicos y no cuadráticas. Hagamos un recorrido por la historia de los números complejos: \\
 
+Entre los años 780-850, Al-Khwarizmi plasmaba en \textit{Álgebra} soluciones para ecuaciones cuadráticas de varios tipos. Dichas soluciones coinciden con lo que se aprende en los colegios hoy día si nos restringimos únicamente a soluciones positivas (\cite{waerden1985}). Las pruebas que se propusieron están basadas en geometría. Las fuentes parecen provenir de la matemática hindú y griega. En palabra de \cite{waerden1985}, \\
 
+``Bajo el califato de al-Ma'mum (813-833), al-Khwarizmi formó parte de la \textit{Casa de los Sabios}, una especie de academia de científicos fundada en Bagdad, donde se hubo una gran tradición de aprendizaje e investigación científica.'' \\
+
+Los métodos algebraicos conocidos por los árabes fueron recuperados en Italia gracias a la traducción al latín del álgebra desarrollada por al-Khwarizmi por Gerard de Cremona (1114-1187), y por los trabajos de Leornado de Pissa (Fibonacci) (1170-1250). \\
+
+Sobre el año 1225, cuando Federico II reinaba en Sicilia, Leonardo de Pisa se presentó ante el emperador (\cite{nahin1998}). Ciertos matemáticos locales le propusieron problemas que Leonardo resolvió sin dificultad. Uno de esos problemas fue encontrar la solución de la ecuación
+
+$$x^3+2x^2+10x=20$$
+
+La ecuación cúbica en su forma general
+
+$$ x^3+ax^2+bx+c = 0$$
+
+se puede reducir a una forma más simple
+
+$$x^3+px+q = 0$$
+
+a través del cambio de variable $x'  = x + \frac{1}{3}a$. Este cambio de variable apareció por primera vez en dos manuscritos florentinos anónimos al final del siglo XIV. \\
+
+Si se restringen los valores posibles para $x$ a los positivos, surgen tres casos conocidos como \textit{cúbicas deprimidas}:
+
+$$ (a) \hspace{1cm} x^3+px = q $$
+$$ (b) \hspace{1cm} x^3 = px+q $$
+$$ (c) \hspace{1cm} x^3+q = px $$
+
+El primero en resolver la ecuación (a) (y quizá (b) y (c)) fue Scipione del Ferro, profesor de la Universidad de Bolonia hasta que falleció en 1526 (\cite{mactutor}). En su lecho de muerte, del Ferro confió la fórmula a su alumno Antonio María Fiore. Fiore retó a Tartaglia a un concurso matemático. La noche antes del concurso, Tartaglia redescubrió la fórmula y ganó el concurso. Tartaglia, por su parte, reveló la fórmula (pero no la demostración) a Gerolamo Cardano, quien firmó una cláusula de confidencialidad. Sabiendo la fórmula, Cardano fue capaz de encontrar la demostración. Más tarde, Cardano supo que del Ferro tenía la fórmula y la verificó. Entonces, Cardano procedió a publicar la fórmula para los tres casos en su \textit{Ars Magna} (1545). Se sabe que Cardano mencionó a del Ferro como primer autor y a Tartaglia como un matemático que encontró la fórmula de manera independiente. \\
+
+Una dificultad del caso (b) que no fue presentada en la solución de (a) se basa en la posibilidad de tener una raíz cuadrada de un número negativo en la expresión numérica de la fórmula. Por ejemplo, sustituyendo $x = u+v$ en $x^3=px+q$ para obtener
+
+$$ x^3-px = u^3+v^3+3uv(u+v)-p(u+v) = q$$
+
+Sea $3uv = p$ para obtener $u^3+v^3 = q$ y $u^3 v^3=(p/3)^3$. Es decir la suma y el producto de dos cubos es conocida. Esto se utiliza para formar una ecuación cuadrática que se puede resolver
+
+$$ x = u+v = \sqrt[3]{\frac{1}{2}q+w} + \sqrt[3]{\frac{1}{2}q-w}$$
+
+donde 
+
+$$ w = \sqrt{(\frac{1}{2}q)^2-(\frac{1}{3}p)^2}$$
+
+El llamado \textit{casus irreducibilis} se da cuando la expresión bajo el signo radical $w$ es negativo. Cardano elude discutir ese caso en \textit{Ars Magna}. Quizá, en su mente, evitarlo estaba justificado por la correspondencia, ahora sabemos incorrecta, entre el \textit{casus irreducibilis} y la ausencia de una solución real y positiva para la cúbica. \\
+
+Según \cite{waerden1985}, ``Cardano fue el primero en introducir números complejos de la forma $a + \sqrt{b}$ desde el punto de vista del álgebra, pero tenía reticencias sobre ello''.\\
+
+Rafael Bombelli escribió un compendio de tres libros, entre 1572 y 1579, llamado \textit{l'Algebra}. Bombelli introdujo la notación de $\sqrt{-1}$, llamándolo \textit{piú di meno}. La discusión sobre cúbicas en \textit{l'Algebra} sigue los trabajos de Cardano, pero ahora el \textit{casus irreducibilis} se discute concienzudamente (\cite{blank1999}). Bombelli consideró la ecuación
+
+$$ x^3 = 15x+4$$
+
+para la cual la fórmula de Cardano dice
+
+$$ x = \sqrt[3]{2+\sqrt{-121}} + \sqrt[3]{2-\sqrt{-121}}$$
+
+Bombelli observó que la ecuación cúbica tiene $x = 4$ como solución, y a continuación explica la expresión dada por la fórmula de Cardano a través de otra expresión de $x = 4$. Estableciendo
+
+$$ \sqrt[3]{2+\sqrt{-121}} = a +bi$$
+
+de donde se deduce
+
+$$ \sqrt[3]{2-\sqrt{-121}} = a-bi$$
+
+y se obtiene, tras manipulaciones algebraicas, $a=2$ y $b=1$. Por tanto,
+
+$$x = a+bi +a -bi = 2a = 4$$
+
+René Descartes (1596-1650) fue un filósofo cuyo trabajo, \textit{La Géométrie} (\cite{descartes1952}), incluye su aplicación del álgebra a la geometría de donde obtenemos hoy día la geometría cartesiana. Descartes fue presionado por sus ideas para publicar sus ideas, y escribió un tratado de ciencias con título \textit{Discours de la méthod pour bien conduire sa raison et chercher la vérité dans les sciences}. En él, Descartes asoció los números imaginarios con imposibilidades geométricos. Esto se puede ver por la construcción geométrica que usó para resolver la ecuación $z^2 =az-b^2$, con $a$ y $b^2$ positivos. \\
+
+John Wallis (1616-1703) propuso en su trabajo \textit{Algebra} que los números negativos tenían una perfecta explicación física, basada en una recta con una marca en el cero, de manera que los números positivos miden la distancia desde el cero a un punto a su derecha, y los números negativos como una distancia al cero por la izquierda. Igualmente, hizo un gran progreso en la interpretación geométrica de $\sqrt{-1}$.  \\
+
+Abraham de Moivre (1667-1754) conoció a Newton y en 1698 mencionó que Newton ya conocía, antes de 1676, una expresión equivalente a la actual fórmula de Moivre:
+
+$$(\cos \theta + i \sin \theta))^n = \cos(n\theta) + i \sin(n \theta)$$
+
+donde $n$ es un entero. Aparentemente Newton usó esta fórmula para calcular las raíces cúbicas que aparecían en la fórmula de Cardano, en el caso irreducible. de Moivre sabía y usó la fórmula que lleva su nombre, ya que se ve claro en sus trabajos, aunque nunca la escribió explícitamente. \\
+
+L. Euler (1707-1783) introdujo la notación $i = \sqrt{-1}$ (\cite{dunham1999}), y visualizó los números complejos con coordenadas rectangulares. Euler usó la fórmula $x+iy = r(\cos \theta +i \sin \theta)$, y representó las raíces de $z^n = 1$ como los vértices de un polígono regular. Definió la exponencial compleja y probó la identidad $e^{i\theta} = \cos \theta +i \sin \theta$. \\
+
+Caspar Wessel (1745-1818) fue el primero en obtener y publicar una representación apropiada de los números complejos. En 1797, Wessel presentó su artículo \textit{On the Analytic Representation of Direction: An Attempt} en la Real Academia de las Ciencias de Dinamarca. En él se presentaba lo que hoy llamamos vectores (\cite{crowe1967}). Utilizaba la suma geométrica de vectores (ley del paralelogramo) y definió la multiplicación de vectores en términos de lo que hoy llamamos multiplicar números complejos en su forma polar: sumando sus argumentos y multiplicando sus módulos. \\
+
+Jean-Robert Argand (1768-1822) escribió un trabajo llamado \textit{Essay on the Geometrical Interpretation of Imaginary Quantities} (\cite{argand1971}) pero no consiguió publicarlo. Una copia cayó en manos del matemático A. Legendre (1752-1833). Este lo publicó en 1813 en \textit{Annales de Mathématiques} donde se asentaron las bases de los números y el plano complejo. \\
+
+William Rowan Hamilton (1805-1865) definió en 1831 números reales relacionados $(a,b)$ como parejas. Además, introdujo la suma de dos parejas $(a,b) + (c,d) = (a+c,b+d)$ y la multiplicación $(a,b)(c,d) = (ac-bd,bc-ad)$. Es decir, presentó las operaciones algebraibas elementales de números complejos. \\
+
+Se cree que Carl Friedrich Gauss (1777-1855) ya poseía una representación geométrica de los números complejos en 1796, pero no la publicó hasta 1831, cuando envió su ideas a la Real Sociedad de Gottingen. Gauss introdujo el término número complejo. \\
+
+Augustin-Louis Cauchy (1789-1857) inició la teoría de funciones complejas en un trabajo de 1814. El término de función analítica no se mencionaba, pero el concepto se percibía. El trabajo fue publicado en 1825. Las integral curvilínea aparece en él, pero no por primera vez, ya que Poisson había publicado en 1820 un artículo con un recorrido que no era en línea recta. Cauchy construyó el conjunto de los números complejos en 1847 como $R[x]/(x^2+1)$.
 
 
 \subsubsection{Situaciones}
