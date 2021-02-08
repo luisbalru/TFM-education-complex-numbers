@@ -164,19 +164,22 @@ Concretamente,
 
 
 
-Por otra parte, en el campo procedimental se diferencian, igualmente, tres niveles, según la complejidad del contenido. Son las destrezas, que procesan hechos; los razonamientos, que procesan conceptos; y las estrategias, que procesan estructuras (\cite{rico2016}). \\
+Por otra parte, en el campo procedimental se diferencian, igualmente, tres niveles, según la complejidad del contenido. Son las \textbf{destrezas}, que procesan hechos; los \textbf{razonamientos}, que procesan conceptos; y las \textbf{estrategias}, que procesan estructuras (\cite{rico2016}). \\
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{lcccccc}
 		\toprule
-		\hspace{5.5cm}Destrezas \\
+		\hspace{5cm}Destrezas \\
 		\midrule
 		- Identificar la parte real y parte imaginaria de un número complejo \\
 		- Calcular el afijo, módulo y argumento de un número complejo \\
 		- Calcular el conjugado de un número complejo \\
 		- Representar números complejos en su forma binómica y polar\\
 		\hspace{0.2cm} en el plano complejo (Eje Real y Eje Imaginario) \\
+		- Operaciones con números complejos en forma binómica: sumar, \\ \hspace{0.2cm}multiplicar y dividir números complejos. \\
+		- Operaciones con números complejos en forma polar: Producto y \\
+		\hspace{0.2cm}división. \\
 		\bottomrule
 	\end{tabular}
 	\caption{Contenido procedimental: Destrezas}
@@ -188,13 +191,12 @@ Por otra parte, en el campo procedimental se diferencian, igualmente, tres nivel
 	\centering
 	\begin{tabular}{lcccccc}
 		\toprule
-		\hspace{5.5cm}Razonamientos \\
+		\hspace{5cm}Razonamientos \\
 		\midrule
 		- Pasar de forma binómica a forma polar \\
+		- Producto por escalar y potencia. \\
 		- Pasar de forma binómica y polar a forma trigonométrica\\
-		- Operaciones con números complejos en forma binómica: sumar, \\ \hspace{0.2cm}multiplicar y dividir números complejos. Producto por escalar y potencia. \\
-		- Operaciones con números complejos en forma polar: Producto, \\
-		\hspace{0.2cm}división, raíz $n$-ésima y potencia. Uso de la fórmula de Moivre.\\
+		- Cálculo de la raíz $n$-ésima y potencia. Uso de la fórmula de Moivre.\\
 		\bottomrule
 	\end{tabular}
 	\caption{Contenido procedimental: Razonamientos}
@@ -207,8 +209,9 @@ Por otra parte, en el campo procedimental se diferencian, igualmente, tres nivel
 	\centering
 	\begin{tabular}{lcccccc}
 		\toprule
-		\hspace{5.5cm}Estrategias \\
+		\hspace{5cm}Estrategias \\
 		\midrule
+		- Estrategias de resolución de problemas con números complejos. \\ \hspace{0.2cm}Aplicaciones a la vida real y uso de software. \\
 		\bottomrule
 	\end{tabular}
 	\caption{Contenido procedimental: Estrategias}
@@ -312,7 +315,7 @@ Existen multitud de recursos digitales, lenguajes de programación y software pa
 	\label{geogebra3}
 \end{figure}
 
-Lenguajes de programación más dedicados (como Maxima CAS, wxMaxima) o de propósito general (Python) y herramientas como WolframAlpha (gratuita en su versión básica) son alternativas interesantes para la representación de números complejos. Incluso, es posible trabajar con números complejos en calculadoras científicas.
+Lenguajes de programación más dedicados (como Maxima CAS, wxMaxima) o de propósito general (Python) y herramientas como WolframAlpha (gratuita en su versión básica) son alternativas interesantes para la representación de números complejos. Incluso es posible trabajar con números complejos en calculadoras científicas.
 
 \subsection{Sentido del Concepto Matemático}
 
@@ -330,6 +333,15 @@ Por último, podemos señalar \textit{argumento} como un término quizá ligeram
 
 \subsubsection{Contextos Matemáticos}
 
+Los contextos en los que los números complejos tienen cabida están muy ligados al desarrollo científico-tecnológico. Como ya he comentado, se aplican en física y química avanzada (cuántica) y en multitud de tecnologías actuales, como los túneles de viento para la fabricación, diseño y control de calidad de vehículos (dinámica de fluidos). No obstante, podemos decir que la interacción más directa entre la sociedad, y por ende el alumnado, y los números complejos es el electromagnetismo. Además, los estudiantes de Bachillerato, a través de asignaturas como Física I, Física II o Tecnología Industrial estudiarán en profundidad el campo eléctrico y magnético, acercándose a los circuitos y, en particular, a los circuitos de corriente alterna. Sabemos que la corriente alterna se forma con ondas sinusoidales periódicas con expresión:
+
+$$V(t) = V_0  \sin(\omega t + \varphi)$$
+
+con $V_0$ la amplitud máxima, $\omega$ la frecuencia angular y $\varphi$ el desfase. Dicha expresión se puede representar por medio de números complejos como
+
+$$V(t) = V_0 \cos(\omega t +\varphi) + V_0 \sin(\omega t + \varphi) i = V_0 e^{(\omega t + \varphi)i}$$
+
+En consecuencia, se puede escribir la ley de Ohm generalizada por medio de la división compleja, base de cálculo en todos los circuitos electrónicos. En definitiva, los números complejos son absolutamente necesarios en nuestra vida diaria y es posible, por medio de conexiones con otras asignaturas, justificar el contexto matemático de los mismos.
 \subsubsection{Fenómenos}
 
 Tal y como expresa \cite{lupi2013} en \cite{rico2013}, la historia es un buen mecanismo para estudiar el contenido de un tema, pues el desarrollo histórico es útil para determinar el origen de los conceptos, comparar sistemas de representación o localizar problemas clásicos. \\
@@ -427,11 +439,12 @@ Hoy en día, la variable compleja sustenta los mayores avances en ciencia y tecn
 
 \subsubsection{Situaciones}
 
+Como sabemos, el marco teórico del estudio PISA considera cuatro tipo de situaciones: Personales, Laborales, Sociales y Científicas (\cite{estudiopisa}). Los números complejos están restringidos al ámbito científico y laboral (o educativo) si el nivel de especialización del alumno/a sigue caminos científico-tecnológicos. En particular, en la física cuántica, la química cuántica, los circuitos electrónicos, electromagnetismo o la dinámica de fluidos, con aplicaciones sobre la ingeniería eléctrica o del automóvil (túnel de viento). En el nivel de 1º Bachillerato, es complicado que los estudiantes se encuentren con los números complejos en sus situaciones cotidianas, a pesar del gran impacto que la variable compleja tiene en el día a día del ser humano.
 
 
 \section{Análisis Cognitivo}
 
-A continuación, presentamos el análisis cognitivo, es decir, nos centraremos en estudiar cuál es el cometido de aprender los contenidos que hemos presentado. Para ello, estudiamos las expectativas de aprendizaje, esto es, qué se espera que los escolares aprendan; las limitaciones en el aprendizaje, es decir, qué puede ralentizar, bloquear o dificultar ese aprendizaje, distinguiendo entre las dificultades subyacentes y los errores que habitualmente se cometen; y la oportunidades de aprendizaje, en otras palabras, cómo se puede promover el aprendizaje y minimizar el impacto de esas limitaciones (\cite{rico2016}, \cite{lupi2013}).
+A continuación, presentamos el análisis cognitivo, es decir, nos centraremos en estudiar cuál es el cometido de aprender los contenidos que hemos enunciado. Para ello, estudiamos las expectativas de aprendizaje, esto es, qué se espera que los escolares aprendan; las limitaciones en el aprendizaje, es decir, qué puede ralentizar, bloquear o dificultar ese aprendizaje, distinguiendo entre las dificultades subyacentes y los errores que habitualmente se cometen; y la oportunidades de aprendizaje, en otras palabras, cómo se puede promover el aprendizaje y minimizar el impacto de esas limitaciones (\cite{rico2016}, \cite{lupi2013}).
 
 \subsection{Expectativas de aprendizaje}
 
@@ -479,7 +492,7 @@ Como se pude comprobar, las competencias más desarrolladas por nuestra activida
 
 \subsection{Limitaciones en el aprendizaje}
 
-Las expectativas de aprendizaje mencionadas se pueden ver ralentizadas o mermadas por distintos factores, como la complejidad inherente de los conceptos, el interés del alumnado, la heterogeneidad del grupo, etc. En definitiva, un profesor debe estar preparado para determinar qué dificultades encuentran los estudiantes al estudiar un bloque de contenidos y, en consecuencia, qué errores cometen en el proceso de aprendizaje de los mismos y en la realización de ejercicios propuestos. Esta apartado se centra en eso precisamente: determinar las dificultades y los errores más frecuentes cuando se estudian números complejos.
+Las expectativas de aprendizaje mencionadas se pueden ver ralentizadas o mermadas por distintos factores, como la complejidad inherente de los conceptos, el interés del alumnado, la heterogeneidad del grupo, etc. En definitiva, un profesor debe estar preparado para determinar qué dificultades encuentran los estudiantes al enfrentarse un bloque de contenidos y, en consecuencia, qué errores cometen en el proceso de aprendizaje de los mismos y en la realización de ejercicios propuestos. Esta apartado se centra en eso precisamente: determinar las dificultades y los errores más frecuentes cuando se estudian números complejos.
 
 
 \subsection{Oportunidades de aprendizaje}
